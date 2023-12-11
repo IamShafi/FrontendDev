@@ -1,0 +1,90 @@
+.footer {
+    margin-top: -100px;
+    background-color: #0C1524;
+    color: white;
+    padding: 20px;
+}
+
+.wrapper {
+    margin: 0 80px;
+}
+
+.logo {
+    text-align: left;
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+
+.footer_columns {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) repeat(3, 0.5fr);
+    grid-gap: 20px;
+}
+
+
+.footer_column {
+    text-align: center;
+}
+
+.footer_column ul {
+    cursor: pointer;
+    list-style: none;
+    padding: 0;
+}
+
+.footer_column li {
+    margin-bottom: 10px;
+}
+
+.footer_column_first {
+    display: flex;
+    flex-direction: row;
+}
+
+.location_icon {
+    text-align: center;
+    margin-right: 30px;
+}
+
+.location_icon img {
+    max-width: 24px;
+    margin-bottom: 10px;
+}
+
+.contact_row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+  }
+  
+  .contact_row .icon {
+    margin-right: 30px;
+  }
+  
+  .contact_row .text {
+    color: #fff;
+  }
+  
+  .contact_row img {
+    display: flex;
+    max-width: 24px; /* Размер иконок телефона и почты */
+  }
+
+  @media only screen and (max-width: 800px) {
+    .wrapper {
+      margin: 0 20px;
+    }
+
+    .footer_columns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_column {
+        text-align: left;
+    }
+  
+  }
+  
+
+  

@@ -1,0 +1,46 @@
+.wrapper {
+    margin: 0 80px;
+    margin-bottom: 72px;
+  }
+
+.productivity_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .productivity_image {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .productivity_image img {
+    max-width: 100%;
+  }
+  
+  .productivity_content {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .productivity_content h2 {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .productivity_content p {
+    margin-top: 10px;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .wrapper {
+      margin: 0 20px;
+    }
+
+    .productivity_section {
+      grid-template-columns: 1fr; 
+    }
+  }

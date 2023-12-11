@@ -1,0 +1,7 @@
+.App {
+  position: relative;
+  background-color: #181E2A;
+  background-image: url('./assets/images/bg-curvy-desktop.svg');
+  background-size: contain; 
+  background-repeat: no-repeat;
+}
