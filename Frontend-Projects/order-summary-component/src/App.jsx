@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+// import icon from './assets/images/icon-music.svg'
 import './App.css'
 
 import OrderSummary from './components/OrderSummary'
@@ -27,7 +27,7 @@ function App() {
             <div className="card_plan">
               <div className="card_plan_container">
                 <figure>
-                  <img src="../src/assets/images/icon-music.svg" alt="music icon" />
+                  <img src="./assets/images/icon-music.svg" alt="music icon" />
                   <div>
                     <h2 className="card_plan_title">Annual Plan</h2>
                     <p className="card_plan_price">$59.99/year</p>
