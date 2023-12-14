@@ -1,0 +1,45 @@
+import React from 'react';
+import './App.css'; // Import your Tailwind CSS file
+
+function App() {
+  return (
+    <div className="">
+      {/* CONTENEDOR PRINCIPAL */}
+      <main className="container mx-auto p-4 flex justify-center items-center bg-cover bg-top bg-no-repeat bg-pattern">
+        {/* CARD */}
+        <div className="card max-w-450 min-w-350 h-696 flex flex-wrap justify-center bg-white shadow-lg rounded-md text-center transition-all duration-400">
+          {/* CARD HEADER */}
+          <div className="card_header w-full h-220 bg-cover bg-top rounded-t-md transition-all duration-400"
+               style={{ backgroundImage: "url('images/illustration-hero.svg')" }}
+          ></div>
+          {/* ZONA DE CONTENIDO */}
+          <section className="card_content w-full h-480 p-12 flex flex-col transition-all duration-400">
+            <h1 className="card_title mb-4 text-center font-extrabold text-xl text-hsl-primary">Order Summary</h1>
+            <p className="card_parag mb-6 text-hsl-secondary">
+              You can now listen to millions of songs, audiobooks, and podcasts on any
+              device anywhere you like!
+            </p>
+            {/* ZONA DE PLAN ANUAL */}
+            <div className="card_plan w-full h-100 p-0 sm:p-6 mb-8 flex items-center justify-between bg-hsl-light border rounded-md text-left">
+              <div className="card_plan_container flex">
+                <figure className="flex">
+                  <img src="images/icon-music.svg" alt="music icon" />
+                  <div className="ml-3">
+                    <h2 className="card_plan_title text-sm">Annual Plan</h2>
+                    <p className="card_plan_price text-sm">$59.99/year</p>
+                  </div>
+                </figure>
+                <a href="#" className="text-hsl-primary">Change</a>
+              </div>
+            </div>
+            {/* BOTÓN */}
+            <button className="card_btn w-full py-2 mb-8 text-white bg-hsl-primary rounded-md font-semibold text-sm shadow-md cursor-pointer hover:bg-hsla-primary-50 transition-all duration-200">Proceed to Payment</button>
+            <a className="btn_cancel text-hsl-secondary text-sm hover:text-hsl-primary-50 transition-all duration-200" href="#">Cancel Order</a>
+          </section>
+        </div>
+      </main>
+    </div>
+  );
+}
+
+export default App;
