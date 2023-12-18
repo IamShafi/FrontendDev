@@ -18,6 +18,8 @@ navToggle.addEventListener("click", function () {
 
   const linksHeight = links.getBoundingClientRect().height;
   const containerHeight = linksContainer.getBoundingClientRect().height;
+  
+  
   if (containerHeight === 0) {
     linksContainer.style.height = `${linksHeight}px`;
   } else {
@@ -81,4 +83,8 @@ scrollLinks.forEach((link) => {
     linksContainer.style.height = 0;
   });
 });
-// calculate heights
+// const linksref = React.createRef(); - -> <ul className='links-container' ref={linksref}>
+// < onClick={navToggleHandler}> --> setting container heights
+// useState -> linksHeight, containerHeight
+// useEffect (() => )
+// 
